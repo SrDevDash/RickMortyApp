@@ -1,0 +1,115 @@
+.card {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  padding: 5px;
+  margin: 40px 10px;
+  color: white;
+  background-color: rgba(82, 214, 97, 0.368);
+  border-radius: 25px;
+  border: 1px solid rgb(219, 252, 183);
+
+  width: 280px;
+  height: 400px;
+
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.subText {
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(162, 162, 255);
+  text-shadow: 2px 2px #373030;
+}
+
+.img {
+  border-radius: 360px;
+  width: 50%;
+  border: 5px solid rgb(90, 133, 219);
+  transition: 0.5s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+  width: 45px;
+  height: 30px;
+  border-radius: 35px;
+  background: rgb(0, 161, 239);
+  background: radial-gradient(
+    circle,
+    rgba(254, 59, 59, 0.735) 0%,
+    rgba(168, 25, 25, 0.632) 100%
+  );
+  border: none;
+  font-family: "Fredoka One", "cursive";
+  color: rgba(0, 0, 0, 0.594);
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn:hover {
+  background: rgb(161, 175, 160);
+  background: radial-gradient(
+    circle,
+    rgb(76, 145, 182) 0%,
+    rgb(17, 30, 84) 100%
+  );
+}
+
+.btnFv {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 35px;
+  height: 20px;
+  border-radius: 35px;
+  background-color: rgba(0, 0, 139, 0);
+  border: none;
+  font-size: 30px;
+  animation-name: btnFvKeys;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.btnFv:hover {
+  cursor: pointer;
+  color: black;
+}
+
+@keyframes btnFvKeys {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.name {
+  margin-top: 50px;
+  overflow: hidden;
+  text-shadow: 3px 3px 1px rgb(0, 0, 0);
+}

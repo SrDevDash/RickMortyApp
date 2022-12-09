@@ -1,0 +1,13 @@
+.select {
+  margin: 30px 100px;
+  width: 140px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+}
+option {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+option:hover {
+  background-color: white;
+}
