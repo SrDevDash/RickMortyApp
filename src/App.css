@@ -8,10 +8,10 @@
   min-width: 100vh;
 
   background-image: url("https://images3.alphacoders.com/812/812062.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
-  background-color: rgb(118, 160, 146);
+  background-size: contain;
+  background-color: rgb(0, 0, 0);
 }
 
 .logo {
