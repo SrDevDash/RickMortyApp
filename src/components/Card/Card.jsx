@@ -1,13 +1,12 @@
 import styles from "./card.module.css";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addFavorite, deleteFavorite } from "../../redux/actions/actions";
 import { useState } from "react";
 
 export default function Card(props) {
   const { id, species, fav, name, image, gender } = props.character;
   const dispatch = useDispatch();
-  const favoritos = useSelector((store) => store.myFavorites);
   const [isFav, setIsFav] = useState(fav);
 
   const togleFavorite = (e) => {
