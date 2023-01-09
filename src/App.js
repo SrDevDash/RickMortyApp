@@ -42,7 +42,7 @@ function App() {
   const onSearch = (id) => {
     const find = characters.find(character => {
       console.log(character.id, id)
-      return character.id == id
+      return character.id === id
     });
 
 
