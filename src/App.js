@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     !access && navigate('/login');
 
-  }, [access]);
+  }, [access, navigate]);
 
   const onSearch = (id) => {
     const find = characters.find(character => {
