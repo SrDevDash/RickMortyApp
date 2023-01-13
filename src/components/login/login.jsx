@@ -27,6 +27,10 @@ export default function Login(props) {
   return (
     <div className={style.container}>
       <h1 className={style.title}>Log in</h1>
+      <div className={style.credencialBox}>
+        <label>Email: test@gmail.com</label>
+        <label>Password: 123456</label>
+      </div>
       <form onSubmit={handleSubmit} className={style.form}>
         <input
           className={style.input}

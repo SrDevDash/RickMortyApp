@@ -25,7 +25,22 @@
 .text {
   font-family: Helvetica, Helvetica, sans-serif;
 }
+.credencialBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 
+  position: absolute;
+  right: 200px;
+  top: 400px;
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+}
+.credencialBox > label {
+  margin: 10px;
+}
 .form {
   margin: auto;
   display: flex;
